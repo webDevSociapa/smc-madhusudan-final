@@ -1,0 +1,79 @@
+.body {
+    background-color: #fbf8f3;
+    font-family: Arial, sans-serif;
+}
+
+.our-brand-banner{
+    bordrer: 2px solid #000;
+}
+
+.tabs-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+    justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+  border-bottom: 2px solid #ccc;
+  margin-top: 50px;
+}
+
+.tabs__tab {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+  color: #555;
+}
+
+.tabs__tab[aria-selected="true"] {
+  border-bottom-color: #85673D; /* Active tab color */
+  color: #000;
+  font-weight: bold;
+}
+
+.tabs__tab:focus {
+  outline: 2px solid #85673D;
+  outline-offset: 2px;
+}
+
+.review-card{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid;
+}
+
+.bg-product-list{
+    background-image: url("/assets/img/productFrame-1.png");
+    padding: 59px;
+    repeat: no-repeat;
+    background-size: cover;
+}
+
+.custom-footer {
+    background-color: #1961AC;
+    height: 480px;
+  }
+
+  .footer-content-card p {
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    width: 30%;
+
+  }
+
+  .footer-container-card{
+    display: flex;
+    border: 2px solid;
+    justify-content: flex-start;
+  }
