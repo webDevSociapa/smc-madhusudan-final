@@ -3,9 +3,6 @@
     font-family: Arial, sans-serif;
 }
 
-.our-brand-banner{
-    bordrer: 2px solid #000;
-}
 
 .tabs-list {
     display: flex;
@@ -51,6 +48,47 @@
     border: 2px solid;
 }
 
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.review-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.review-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.cards1 {
+  height: 300px;
+  min-width: 250px; /* Fixed card width */
+  border: 1px solid;
+  flex-shrink: 0;
+}
+
+.scroll-btn {
+  background-color: #ccc;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+
+
+
+
+
 .bg-product-list{
     background-image: url("/assets/img/productFrame-1.png");
     padding: 59px;
@@ -58,22 +96,39 @@
     background-size: cover;
 }
 
-.custom-footer {
-    background-color: #1961AC;
-    height: 480px;
-  }
+/* footer */
+.newsletter-bg {
+  background-color: #79C142;
+}
 
-  .footer-content-card p {
-    color: #fff;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    width: 30%;
+.footer-bottom {
+  background-color: #79C142;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
 
-  }
+footer.bg-primary {
+  background-color: #1961AC !important;
+}
 
-  .footer-container-card{
-    display: flex;
-    border: 2px solid;
-    justify-content: flex-start;
-  }
+.footer-wrapper {
+  position: relative;
+  padding-top: 10px; /* Creates space above footer for the overlapping newsletter */
+}
+
+.newsletter-section {
+  top: -60px; /* Controls how much the newsletter overlaps */
+  max-width: 1100px;
+}
+
+.list-link{
+  line-height: 30px;
+}
+
+.footer-bottom-stripe{
+  border-radius: 30px;
+  clip-path: ellipse(800px 120% at bottom);
+  width: 100%;
+}
+
+
