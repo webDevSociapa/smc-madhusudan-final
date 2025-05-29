@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.custom-navbar {
+  background-color: #1961AC;
+}
+
+.navbar-brand img {
+  height: 70px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 6px; /* optional: slightly rounds the corners */
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: capitalize;
+  transition: color 0.3s ease;
+  padding: 10px 30px !important;
+}
+
+.nav-link:hover {
+  color: #79C142 !important;
+}
+
+/* Slider Section */
+
+/* About Us */
+.about-section {
+  background: url('/assets/img/slider-bg.png') no-repeat center center/cover;
+  position: relative;
+  min-height: 500px;
+}
+
+/* .about-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay 
+  z-index: 1;
+} */
+
+.about-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.about-heading {
+  font-family: 'outfit';
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #1961AC;
+}
+
+.about-heading span {
+  font-weight: 400;
+}
+
+.about-text {
+  font-size: 1rem;
+  font-family: 'Poppins';
+  color: #727272;
+  letter-spacing: .1em;
+}
+
+.abt-btn {
+  background: #1961AC !important;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 30px;
+}
+
+
+/* ===============================
+      Media Query Starts Here 
+==================================*/
+
+@media (max-width: 575px) {
+  .abt-img {
+    text-align: center;
+  }
+  .abt-img img {
+    width: 75%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* About Section */
+  .about-section img {
+    width: 100%;
+  }
+
+  .about-heading {
+    margin-top: 0 !important;
+    font-size: 2rem;
+  }
+  .about-text {
+    font-size: .7rem;
+  }
+  .abt-btn {
+    font-size: 0.7rem;
+    padding: 8px 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  .nav-link {
+    padding: 10px 15px !important;
+  }
+  .search-bar {
+    display: none !important;
+    transition: all 0.3s ease;
+  }
+  /* End Header */
+
+  /* About Section */
+  .about-section img {
+    width: 100%;
+  }
+
+  .about-heading {
+    margin-top: 0 !important;
+    font-size: 2.4rem;
+  }
+  .about-text {
+    font-size: .9rem;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  /* Header */
+  .nav-link {
+    padding: 10px 12px !important;
+  }
+  /* End Header */
+
+  /* about section */
+  .about-heading {
+    margin-left: 35px;
+  }
+  .about-text {
+    margin-left: 35px;
+  }
+  .abt-btn {
+    margin-left: 35px;
+  }
+  /* end about section */
+}
+
+@media (min-width: 1400px) and (max-width: 1599px) {
+  /* Header */
+  .nav-link {
+    padding: 10px 20px !important;
+  }
+  /* End Header */
+}
+
