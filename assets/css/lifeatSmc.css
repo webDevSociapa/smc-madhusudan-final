@@ -14,7 +14,19 @@ body {
 
 .life-at-smc-content {
     text-align: justify;
+    margin-bottom: 1rem;
 }
+
+img.img-fluid {
+    border-radius: 8px;
+}
+
+
+.smc-life-images {
+    margin-left: 4px;
+    margin-top: -30px;
+}
+
 
 .current-opening-title {
     color: #1961AC;
@@ -28,7 +40,7 @@ body {
     background-color: #1961AC;
     border-radius: 0px 150px 150px 0px;
     padding: 40px 20px;
-    width: 90%;
+    width: 100%;
     margin: auto;
     margin-top: 20px;
     overflow: hidden;
@@ -41,7 +53,9 @@ body {
     border-radius: 20px;
     padding: 20px;
     border: 2px solid white;
+    margin-bottom: 12px;
 }
+
 
 .job-title {
     font-size: 32px;
@@ -69,8 +83,6 @@ body {
     border: 1px solid;
 }
 
-
-
 .career-question-title {
     color: #1961AC;
     text-align: center;
@@ -84,9 +96,30 @@ body {
     background-color: #E9F4E0 !important;
 }
 
-.smc-life-banner{
-    margin-left: 15px;
+.flower-img {
+    position: absolute;
+    top: 150%;
+    /* just after the top section */
+    right: 0;
+    transform: translateY(-50%);
+    /* shift it up to overlap */
+    max-width: 150px;
+    /* Adjust as needed */
+    z-index: 1;
+    background: none;
+    background-color: transparent;
 }
+
+
+.flower-img-faqs {
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    transform: translateY(-50%);
+    left: 0%;
+
+}
+
 
 /* footer */
 
@@ -125,3 +158,5 @@ footer.bg-primary {
     clip-path: ellipse(800px 120% at bottom);
     width: 100%;
 }
+
+/*  */
