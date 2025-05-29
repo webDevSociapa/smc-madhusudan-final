@@ -57,6 +57,47 @@
     color: #198754 !important;
   }
 
+  .card {
+  border-radius: 10px;
+}
+
+/* Product Listing  */
+
+.product-image {
+  max-height: 180px;
+  object-fit: contain;
+}
+
+.curve-bg {
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  margin-top: -40px;
+  border-top-left-radius: 100% 100px;
+  border-top-right-radius: 100% 100px;
+}
+
+.product-image-wrapper{
+  padding: 30px !important;
+}
+
+.product-title{
+  color: #1961AC;
+  font-weight: 700;
+  font-family: poppins;
+  font-size: 28px;
+
+}
+
+.product-desc{
+  color: #5B5B5B;
+  font-weight: 500;
+  font-family: poppins;
+}
+
+/*  */
+
+
 .review-card{
     display: flex;
     justify-content: center;
