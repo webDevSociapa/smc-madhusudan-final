@@ -1,11 +1,21 @@
- body {
-  background-image: url("/assets/img/bg-image.png") !important;
+body {
+    background-image: url("/assets/img/bg-image.png") !important;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: poppins;
-
 }
 
+.custom-vision{
+}
+
+.custom-top-infrastructure{
+   margin-top: -24px !important;
+    width: 376px;
+    margin-left: -162px !important;
+    font-family: poppins;
+}
+
+/* our brand section */
 
 .tabs-list {
     display: flex;
@@ -43,72 +53,17 @@
   outline: 2px solid #85673D;
   outline-offset: 2px;
 }
-  .common-tab {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    border: 2px solid transparent;
-    border-radius: 15px;
-    font-weight: bold;
-    color: #000;
-  }
-
-  .common-tab.active {
-    border-color: #198754 !important; /* Bootstrap 'success' color */
-    color: #198754 !important;
-  }
-
-.review-card{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    border: 2px solid;
-}
-
-.slider-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  overflow: hidden;
-}
-
-.review-container {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
-}
-
-.review-container::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
-}
-
-.cards1 {
-  height: 300px;
-  min-width: 250px; /* Fixed card width */
-  border: 1px solid;
-  flex-shrink: 0;
-}
-
-.scroll-btn {
-  background-color: #ccc;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 1;
-}
-
 
 .bg-product-list{
     background-image: url("/assets/img/productFrame-1.png");
     padding: 59px;
-    background-repeat: no-repeat;
+    repeat: no-repeat;
     background-size: cover;
 }
 
-/* footer */
+
+/* Footer Section */
+
 .newsletter-bg {
   background-color: #79C142;
 }
@@ -123,7 +78,7 @@ footer.bg-primary {
   background-color: #1961AC !important;
 }
 
-.footer-wrapper { 
+.footer-wrapper {
   position: relative;
   padding-top: 10px; /* Creates space above footer for the overlapping newsletter */
 }
@@ -142,5 +97,3 @@ footer.bg-primary {
   clip-path: ellipse(800px 120% at bottom);
   width: 100%;
 }
-
-
