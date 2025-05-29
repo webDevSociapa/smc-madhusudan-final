@@ -5,15 +5,23 @@ body {
   font-family: poppins;
 }
 
-.custom-vision{
+.infra-label-box {
+  top: -24px;
+  left: -162px;
+  width: 376px;
+  font-family: Poppins;
+  z-index: 2;
+  padding: 6px;
 }
 
-.custom-top-infrastructure{
-   margin-top: -24px !important;
-    width: 376px;
-    margin-left: -162px !important;
-    font-family: poppins;
-}
+
+  @media (max-width: 767.98px) {
+    .infra-label-box {
+      position: static;
+      margin-bottom: 15px;
+      width: 100%;
+    }
+  }
 
 /* our brand section */
 
@@ -96,4 +104,64 @@ footer.bg-primary {
   border-radius: 30px;
   clip-path: ellipse(800px 120% at bottom);
   width: 100%;
+}
+
+
+
+/* Our brand */
+
+.product-image {
+  max-height: 180px;
+  object-fit: contain;
+}
+
+.curve-bg {
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  margin-top: -40px;
+  border-top-left-radius: 100% 100px;
+  border-top-right-radius: 100% 100px;
+}
+
+.product-image-wrapper{
+  padding: 30px !important;
+}
+
+.product-title{
+  color: #1961AC;
+  font-weight: 700;
+  font-family: poppins;
+  font-size: 28px;
+
+}
+
+.product-desc{
+  color: #5B5B5B;
+  font-weight: 500;
+  font-family: poppins;
+}
+
+ .common-tab {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .common-tab.active {
+    border-color: #198754 !important; /* Bootstrap 'success' color */
+    color: #198754 !important;
+  }
+  .card {
+  border-radius: 10px;
+}
+
+
+@media(max-width:578px){
+  .mission-vision-section {
+    margin-left: 15px;
+  }
 }
