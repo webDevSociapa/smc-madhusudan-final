@@ -159,4 +159,16 @@ footer.bg-primary {
     width: 100%;
 }
 
+@media(max-width: 768px){
+    .smc-life-corousal{
+        width: 170px !important;
+    }
+}
+
+@media(max-width: 468px){
+    .smc-life-corousal{
+        width: 120px !important;
+    }
+}
+
 /*  */
