@@ -122,8 +122,9 @@
                     style="background-color: #E9F4E0; border: 2px solid #A5D6A7;">
                     <div class="position-absolute top-0 start-0 translate-middle mission-vision-section"
                         style="background-color: white; border-radius: 50%; padding: 10px; border: 3px solid #7CB342;">
-                        <img src="/assets/img/mission-1.png" alt="Mission Icon" style="width: 30px; height: 30px;">
+                        <img src="/assets/img/mission-1.png" alt="Mission Icon" class="mission-icon">
                     </div>
+
                     <h3 class="text-success fw-bold mt-4">Mission</h3>
                     <p class="text-dark mt-3">
                         To nourish half a million lives every day with safe, innovative, and nutrient-rich frozen
@@ -134,13 +135,14 @@
 
             <!-- Vision -->
             <div class="col-md-6">
-                <div class="position-relative p-4 h-100 rounded-4 shadow-sm"
-                    style="background-color: #BAD3ED; border: 2px solid #64B5F6;">
+                <div class="position-relative p-4 h-100 rounded-4 shadow-sm mt-4 mt-md-0"
+                    style="background-color: #BAD3ED; border: 2px solid #1961AC;">
                     <div class="position-absolute top-0 start-0 translate-middle mission-vision-section"
-                        style="background-color: white; border-radius: 50%; padding: 10px; border: 3px solid #1976D2; margin-left: 4px;">
-                        <img src="/assets/img/vision-1.png" alt="Vision Icon" style="width: 30px; height: 30px;">
+                        style="background-color: white; border-radius: 50%; padding: 10px; border: 3px solid #7CB342; margin-left: 12px;">
+                        <img src="/assets/img/vision-1.png" alt="vision-1 Icon" class="mission-icon">
                     </div>
-                    <h3 class="text-primary fw-bold mt-4">Vision</h3>
+
+                    <h3 class="text-primary fw-bold mt-4 vision-title">Vision</h3>
                     <p class="text-dark mt-3">
                         To lead the global vegetable revolution by pioneering sustainable, high-quality frozen-food
                         solutions that enrich diets and support farming communities worldwide.
@@ -152,27 +154,15 @@
 
     <!-- infrastrucutre -->
 
-    <div class="container py-5">
+    <div class="container py-5 infrastrucutre-section">
         <div class="row align-items-center">
             <!-- Right Side Image with Label -->
             <div class="col-md-6 order-md-2 order-1 position-relative">
-                <!-- Blue Label -->
+                <!-- Blue Label (Desktop Only) -->
                 <div class="infra-label-box d-none d-md-block position-absolute">
-                    <div class="text-white px-4 py-3 rounded-top-3 rounded-end-3 shadow"
-                        style="background-color: #1961AC;">
-                        <h5 class="mb-1 fw-bold fs-4">Infrastructure</h5>
-                        <small class="d-block lh-sm" style="font-size: 13px;">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        </small>
-                    </div>
-                </div>
-
-                <!-- For Small Screens -->
-                <div class="d-block d-md-none mb-3">
-                    <div class="text-white px-4 py-3 rounded-top-3 rounded-end-3 shadow"
-                        style="background-color: #1961AC; font-family: Poppins;">
-                        <h5 class="mb-1 fw-bold fs-4">Infrastructure</h5>
-                        <small class="d-block lh-sm" style="font-size: 13px;">
+                    <div class="text-white px-4 py-3   shadow infra-top-box">
+                        <h5 class="mb-1 fw-bold fs-4 infra-box-title">Infrastructure</h5>
+                        <small class="d-block lh-sm infra-box-content">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         </small>
                     </div>
@@ -185,7 +175,7 @@
 
             <!-- Left Text Content -->
             <div class="col-md-6 order-md-1 order-2 mt-4 mt-md-0">
-                <p class="text-muted fs-5 mb-3" style="font-family: Poppins, sans-serif;">
+                <p class="text-muted fs-5 mb-3 infrastrucutre-content">
                     Our vertically integrated campus features six IQF freezing lines with 12 MT/hour capacity each, a
                     20,000 MT cold-storage facility, a 300 KLD effluent treatment plant, and in-house R&D lab for
                     continuous product innovation and quality assurance.
@@ -335,7 +325,6 @@
                     </div>
                 </div>
             </div>
-
 
             <!-- Alaska Farmz Tab -->
             <div class="tab-pane fade" id="alaska" role="tabpanel" aria-labelledby="alaska-tab">
@@ -536,10 +525,7 @@
             </div>
         </footer>
     </div>
-
     <!--  -->
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
