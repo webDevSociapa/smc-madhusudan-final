@@ -16,6 +16,15 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/our-brand.css" />
   <link rel="stylesheet" href="/assets/css/our-service.css" />
+
+  <!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+<!-- jQuery + Owl Carousel JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 </head>
 <body>
 
@@ -69,9 +78,7 @@
       <div class="carousel-item">
         <img src="/assets/img/slide1.jpg" class="d-block w-100" alt="Slide 2">
       </div>
-
       <!-- Slide 3 -->
-
     </div>
 
     <!-- Controls -->
@@ -177,7 +184,8 @@
                   <p class="text-muted ms-3 mb-0 product-desc">Brief Descriptions For Each Category.</p>
                 </div>
               </div>
-            </div>  <div class="col">
+            </div>  
+            <div class="col">
               <div class="card border-0 rounded-4 overflow-hidden position-relative box-shd">
                 <div class="p-5 text-center">
                   <img src="/assets/img/our-brand-product.png" class="img-fluid mb-3 product-image" alt="Sweet Corn">
@@ -191,7 +199,6 @@
               </div>
             </div>  
             <!-- Repeat more cards as needed -->
-
           </div>
         </div>
       </div>
@@ -290,7 +297,79 @@
         </div>
     </div>
 
+    <!-- Review -->
+    <div class="text-center mb-5 brand-head-div">
+    <h2 class="brand-heading mb-3">Reviews</h2>
+    <p class="brand-subtext">Lorem ipsum is a dummy or placeholder text commonly used in graphic design,</p>
+
+    <!-- Clipart Image -->
+    <img src="assets/img/review-bg.png" alt="Brand Clipart" class="review-clipart-img d-none d-md-block">
+  </div>
+
+  <div class="container">
+    <div class="owl-carousel owl-theme review-carousel">
+      <!-- Card 1 -->
+      <div class="item review-card-h d-flex flex-column align-items-center text-center">
+        <img src="assets/img/review-image.png" alt="Person 1" class="mb-3">
+        <h5 class="review-name mt-3 mb-4">Lorem Ipsum</h5>
+        <p class="review-text mb-0">Lorem ipsum is a dummy or placeholder text commonly used in graphic design, Lorem ipsum is a dummy or placeholder text commonly used in graphic design,</p>
+      </div>
+
+
+      <!-- Card 2 -->
+      <div class="item review-card-h d-flex flex-column align-items-center text-center">
+        <img src="assets/img/review-image.png" alt="Person 1" class="mb-3">
+        <h5 class="review-name mt-3 mb-4">Lorem Ipsum</h5>
+        <p class="review-text mb-0">Lorem ipsum is a dummy or placeholder text commonly used in graphic design, Lorem ipsum is a dummy or placeholder text commonly used in graphic design,</p>
+      </div>
+
+
+      <!-- Card 3 -->
+      <div class="item review-card-h d-flex flex-column align-items-center text-center">
+        <img src="assets/img/review-image.png" alt="Person 1" class="mb-3">
+        <h5 class="review-name mt-3 mb-4">Lorem Ipsum</h5>
+        <p class="review-text mb-0">Lorem ipsum is a dummy or placeholder text commonly used in graphic design, Lorem ipsum is a dummy or placeholder text commonly used in graphic design,</p>
+      </div>
+
+
+      <!-- Add more cards if needed -->
+    </div>
+  </div>
+
+  <!-- <div class="container p-xxl-5 bg-info"></div> -->
+
   <!-- Bootstrap Bundle JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  $(document).ready(function () {
+    const $owl = $(".review-carousel");
+
+    $owl.owlCarousel({
+      loop: true,
+      margin: 40,
+      center: true,
+      items: 3,
+      nav: true,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        768: {
+          items: 3,
+        },
+      },
+      onTranslated: setCenterClass,
+      onInitialized: setCenterClass,
+    });
+
+    function setCenterClass(event) {
+      $('.review-card-h').removeClass('center');
+      let centerIndex = event.item.index + Math.floor(event.page.size / 2);
+      $('.owl-item').eq(centerIndex).find('.review-card-h').addClass('center');
+    }
+  });
+</script>
+
 </body>
 </html>

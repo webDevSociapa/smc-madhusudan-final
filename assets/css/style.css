@@ -205,6 +205,56 @@ body {
   left: 34%;
 }
 
+/* Reviews */
+.review-card-h {
+  background: #fff;
+  border: 1px solid #cdc5c5;
+  border-radius: 20px;
+  padding: 50px 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  transform: scale(0.95);
+  opacity: 0.7;
+  height: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.review-card-h img {
+  width: 80px !important;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.review-name {
+  color: #0056b3;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.review-text {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.review-card-h.center {
+  transform: scale(1.1);
+  opacity: 1;
+  z-index: 2;
+}
+
+.review-clipart-img {
+  position: absolute;
+  left: 5%;
+  right: 0px;
+  top: 10%;
+  transform: translateY(-50%);
+  width: 25%;
+  z-index: -1;
+  opacity: 1;
+}
 
 
 
