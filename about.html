@@ -3,106 +3,379 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Card Carousel</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/our-brand.css" />
+  <link rel="stylesheet" href="/assets/css/aboutus.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <style>
-    .scrolling-wrapper {
-      display: flex;
-      overflow-x: auto;
-      scroll-behavior: smooth;
-      gap: 20px;
-      padding: 10px;
-    }
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-    .scrolling-wrapper::-webkit-scrollbar {
-      display: none;
-    }
 
-    .scroll-card {
-      min-width: 300px;
-      flex: 0 0 auto;
-    }
-
-    .carousel-buttons {
-      display: flex;
-      justify-content: space-between;
-      padding: 0 20px;
-      margin-bottom: 10px;
-    }
-  </style>
+  <title>About us</title>
 </head>
 
 <body>
 
-  <div class="container my-4">
-    <div class="carousel-buttons">
-      <button class="btn btn-outline-primary" onclick="scrollLeft()"><i class="bi bi-arrow-left"></i> Prev</button>
-      <button class="btn btn-outline-primary" onclick="scrollRight()">Next <i class="bi bi-arrow-right"></i></button>
-    </div>
+  <nav class="navbar navbar-expand-lg sticky-top custom-navbar">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="./assets/img/smc-logo.png" alt="Logo" height="80">
+      </a>
 
-    <div class="scrolling-wrapper" id="cardCarousel">
-      <!-- Add enough cards to allow scrolling in both directions -->
-      <div class="card scroll-card">
-        <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="Card 1">
-        <div class="card-body">
-          <h5 class="card-title">Card 1</h5>
-          <p class="card-text">Text for Card 1</p>
-        </div>
+      <!-- Toggler for mobile -->
+      <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Menu and Search -->
+      <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+        <!-- Centered Menu -->
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+          <li class="nav-item"><a class="nav-link text-white" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="/about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="/our-brand.html">Our Brands</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="/our-blog.html">Blogs</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="/our-service.html">Export Services</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="/press-Release.html">Media</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="/lifeAtSmc.html">Career</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="/contact.html">Contact Us</a></li>
+        </ul>
+
+        <!-- Search Bar -->
+        <form class="search-bar d-flex" role="search">
+          <input class="form-control form-control-sm me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-light btn-sm" type="submit">Search</button>
+        </form>
       </div>
-      <div class="card scroll-card">
-        <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="Card 2">
-        <div class="card-body">
-          <h5 class="card-title">Card 2</h5>
-          <p class="card-text">Text for Card 2</p>
+    </div>
+  </nav>
+
+  <!-- About content -->
+
+
+  <div class="container my-5">
+    <div class="card shadow overflow-hidden about-us-card">
+      <div class="row g-0 align-items-center">
+        <!-- Content - 60% -->
+        <div class="col-md-7 bg-about-us-custom text-white p-4">
+          <h3 class="fw-bold mb-3">About <span class="fw-normal">SMC Group</span></h3>
+          <p class="mb-3">
+            SMC Agri Limited is part of the larger SMC Group, a multifaceted conglomerate with interests spanning dairy,
+            agriculture, and food processing.
+          </p>
+          <p class="mb-0">
+            Over three decades, SMC Group has built an integrated ecosystem—from farm inputs to value-added
+            products—leveraging cutting-edge technology and community-driven initiatives that empower farmers and ensure
+            consistent quality.
+          </p>
         </div>
-      </div>
-      <div class="card scroll-card">
-        <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="Card 3">
-        <div class="card-body">
-          <h5 class="card-title">Card 3</h5>
-          <p class="card-text">Text for Card 3</p>
-        </div>
-      </div>
-      <div class="card scroll-card">
-        <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="Card 4">
-        <div class="card-body">
-          <h5 class="card-title">Card 4</h5>
-          <p class="card-text">Text for Card 4</p>
-        </div>
-      </div>
-      <div class="card scroll-card">
-        <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="Card 5">
-        <div class="card-body">
-          <h5 class="card-title">Card 5</h5>
-          <p class="card-text">Text for Card 5</p>
+
+        <!-- Image - 40% -->
+        <div class="col-md-5">
+          <img src="assets/img/aboutusSmc.png" class="img-fluid h-100 w-100 object-fit-cover rounded-custom"
+            alt="SMC Group">
         </div>
       </div>
     </div>
   </div>
 
-  <script>
-    const scrollContainer = document.getElementById('cardCarousel');
-    const scrollAmount = 320; // Adjust depending on card width + margin
-    // Removed invalid line: lets Scroll(); // Initialize scrolling
 
-    function scrollLeft() {
-      scrollContainer.scrollBy({
-        left: -scrollAmount,
-        behavior: 'smooth'
-      });
-    }
+  <!-- Leadership Section -->
 
-    
+ <section class="container py-5">
+  <!-- Title -->
+  <h4 class="text-center fw-bold" style="font-size: 2.5rem; color: #1961AC;">A Visionary Leader</h4>
+  <p class="text-center text-muted">Who Translated Vision Into Reality</p>
 
-    function scrollRight() {
-      scrollContainer.scrollBy({
-        left: scrollAmount,
-        behavior: 'smooth'
-      });
-    }
-  </script>
+  <!-- Top Leader -->
+  <div class="text-center my-5">
+    <div class="mx-auto rounded-circle overflow-hidden border border-3 border-primary" style="width: 130px; height: 130px;">
+      <img src="/assets/img/founder-1.png" alt="Late Shri Sewa Ram Ji" class="w-100 h-100 object-fit-cover">
+    </div>
+    <h5 class="mt-3 fw-bold">LATE SHRI. SEWA RAM JI</h5>
+    <p class="text-muted">Our Founder. Our Patron. And Our Mentor.</p>
+  </div>
+
+  <!-- Middle Row -->
+  <div class="row justify-content-center text-center">
+    <div class="col-6 col-md-4 col-lg-3 mb-4">
+      <div class="rounded-circle border border-3 border-success mx-auto overflow-hidden" style="width: 110px; height: 110px;">
+        <img src="/assets/img/founder-2.png" alt="" class="w-100 h-100 object-fit-cover">
+      </div>
+      <h6 class="mt-2 fw-semibold">SUBHASH CHAND AGGARWAL</h6>
+      <p class="text-muted small">Managing Director</p>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3 mb-4">
+      <div class="rounded-circle border border-3 border-success mx-auto overflow-hidden" style="width: 110px; height: 110px;">
+        <img src="/assets/img/founder-3.png" alt="" class="w-100 h-100 object-fit-cover">
+      </div>
+      <h6 class="mt-2 fw-semibold">MOOL CHAND AGGARWAL</h6>
+      <p class="text-muted small">CMD</p>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3 mb-4">
+      <div class="rounded-circle border border-3 border-success mx-auto overflow-hidden" style="width: 110px; height: 110px;">
+        <img src="/assets/img/founder-7.png" alt="" class="w-100 h-100 object-fit-cover">
+      </div>
+      <h6 class="mt-2 fw-semibold">CHANDER PRAKASH AGGARWAL</h6>
+      <p class="text-muted small">Director</p>
+    </div>
+  </div>
+
+  <!-- Bottom Row -->
+  <div class="row justify-content-center text-center">
+    <div class="col-6 col-md-3 mb-4">
+      <div class="rounded-circle border border-3 border-success mx-auto bg-light" style="width: 110px; height: 110px;"></div>
+      <h6 class="mt-2 fw-semibold">SANJAY AGGARWAL</h6>
+      <p class="text-muted small">Director</p>
+    </div>
+    <div class="col-6 col-md-3 mb-4">
+      <div class="rounded-circle border border-3 border-success mx-auto overflow-hidden" style="width: 110px; height: 110px;">
+        <img src="/assets/img/founder-4.png" alt="" class="w-100 h-100 object-fit-cover">
+      </div>
+      <h6 class="mt-2 fw-semibold">SANDEEP AGGARWAL</h6>
+      <p class="text-muted small">Director</p>
+    </div>
+    <div class="col-6 col-md-3 mb-4">
+      <div class="rounded-circle border border-3 border-success mx-auto overflow-hidden" style="width: 110px; height: 110px;">
+        <img src="/assets/img/founder-5.png" alt="" class="w-100 h-100 object-fit-cover">
+      </div>
+      <h6 class="mt-2 fw-semibold">AMIT AGGARWAL</h6>
+      <p class="text-muted small">Managing Director</p>
+    </div>
+    <div class="col-6 col-md-3 mb-4">
+      <div class="rounded-circle border border-3 border-success mx-auto overflow-hidden" style="width: 110px; height: 110px;">
+        <img src="/assets/img/founder-6.png" alt="" class="w-100 h-100 object-fit-cover">
+      </div>
+      <h6 class="mt-2 fw-semibold">ANURAG AGGARWAL</h6>
+      <p class="text-muted small">Director</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- Mission vission -->
+
+  <div class="container py-5">
+    <div class="row g-4">
+      <!-- Mission -->
+      <div class="col-md-6">
+        <div class="position-relative p-4 h-100 rounded-4 shadow-sm"
+          style="background-color: #E9F4E0; border: 2px solid #A5D6A7;">
+          <div class="position-absolute top-0 start-0 translate-middle mission-vision-section"
+            style="background-color: white; border-radius: 50%; padding: 10px; border: 3px solid #7CB342;">
+            <img src="/assets/img/mission-1.png" alt="Mission Icon" class="mission-icon">
+          </div>
+
+          <h3 class="text-success fw-bold mt-4">Mission</h3>
+          <p class="text-dark mt-3">
+            To nourish half a million lives every day with safe, innovative, and nutrient-rich frozen
+            produce harvested and processed responsibly.
+          </p>
+        </div>
+      </div>
+
+      <!-- Vision -->
+      <div class="col-md-6">
+        <div class="position-relative p-4 h-100 rounded-4 shadow-sm mt-4 mt-md-0"
+          style="background-color: #BAD3ED; border: 2px solid #1961AC;">
+          <div class="position-absolute top-0 start-0 translate-middle mission-vision-section"
+            style="background-color: white; border-radius: 50%; padding: 10px; border: 3px solid #7CB342; margin-left: 12px;">
+            <img src="/assets/img/vision-1.png" alt="vision-1 Icon" class="mission-icon">
+          </div>
+
+          <h3 class="text-primary fw-bold mt-4 vision-title">Vision</h3>
+          <p class="text-dark mt-3">
+            To lead the global vegetable revolution by pioneering sustainable, high-quality frozen-food
+            solutions that enrich diets and support farming communities worldwide.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Infra Strcuture -->
+
+  <div class="container py-5 infrastrucutre-section">
+    <div class="row align-items-center">
+      <!-- Right Side Image with Label -->
+      <div class="col-md-6 order-md-2 order-1 position-relative">
+        <!-- Blue Label (Desktop Only) -->
+        <div class="infra-label-box d-none d-md-block position-absolute">
+          <div class="text-white px-4 py-3   shadow infra-top-box">
+            <h5 class="mb-1 fw-bold fs-4 infra-box-title">Infrastructure</h5>
+            <small class="d-block lh-sm infra-box-content">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </small>
+          </div>
+        </div>
+
+        <!-- Image -->
+        <img src="/assets/img/factory-image.png" alt="Infrastructure Image" class="img-fluid rounded-4 shadow-sm" />
+      </div>
+
+      <!-- Left Text Content -->
+      <div class="col-md-6 order-md-1 order-2 mt-xxl-5 mt-md-0">
+        <p class="text-muted fs-5 mb-3 infrastrucutre-content">
+          Our vertically integrated campus features six IQF freezing lines with 12 MT/hour capacity each, a
+          20,000 MT cold-storage facility, a 300 KLD effluent treatment plant, and in-house R&D lab for
+          continuous product innovation and quality assurance.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container py-5">
+    <h3 class="text-center cert-title">Certifications</h3>
+    <p class="text-center">Lorem ipsum is a dummy or placeholder text commonly used in graphic design,</p>
+
+    <div class="row g-4 justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="cert-card border-blue d-flex p-2 rounded-4">
+          <div class="cert-img pe-2">
+            <img src="/assets/img/certificate.png" class="img-fluid rounded-3" alt="Certificate 1" />
+          </div>
+          <div class="cert-text ps-2 d-flex align-items-center">
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="cert-card border-green d-flex p-2 rounded-4">
+          <div class="cert-img pe-2">
+            <img src="/assets/img/certificate.png" class="img-fluid rounded-3" alt="Certificate 2" />
+          </div>
+          <div class="cert-text ps-2 d-flex align-items-center">
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 (Repeat with color swap if needed) -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="cert-card border-blue d-flex p-2 rounded-4">
+          <div class="cert-img pe-2">
+            <img src="/assets/img/certificate.png" class="img-fluid rounded-3" alt="Certificate 3" />
+          </div>
+          <div class="cert-text ps-2 d-flex align-items-center">
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="cert-card border-green d-flex p-2 rounded-4">
+          <div class="cert-img pe-2">
+            <img src="/assets/img/certificate.png" class="img-fluid rounded-3" alt="Certificate 4" />
+          </div>
+          <div class="cert-text ps-2 d-flex align-items-center">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-wrapper position-relative">
+    <!-- Newsletter Section (Overlapping the Footer) -->
+    <div
+      class="newsletter-section newsletter-bg text-white p-4 rounded position-absolute top-0 start-50 translate-middle-x z-3 w-75 shadow">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <div class="mb-3 mb-md-0">
+          <h4 class="fw-bold mb-1 fs-1">Newsletter</h4>
+          <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <form class="d-flex align-items-center">
+          <input type="email" class="form-control me-2 rounded-pill px-3 bg-transparent text-white"
+            placeholder="Enter Your Mail" style="::placeholder { color: hsl(0, 0%, 100%); }" aria-disabled="true"
+            aria-hidden="true" />
+
+          <button type="submit" class="btn btn-light rounded-pill px-4 fw-semibold">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-primary text-white pt-5 mt-5 overflow-hidden position-relative">
+      <div class="container position-relative z-1 mt-5 pt-5">
+        <!-- Footer Content -->
+        <div class="row">
+          <!-- Company Info -->
+          <div class="col-md-6 col-lg-4 mb-4 pb-5">
+            <div class="">
+              <img src="/assets/img/main-logo.png" alt="SMC Logo" height="80" class="me-3" />
+              <p class="mb-0 small">
+                SMC Agri Limited is a pioneer in delivering the highest quality frozen fruits and
+                vegetables
+                from our farms to your table, embodying a legacy of agricultural excellence since 1991.
+              </p>
+            </div>
+
+            <p class="mt-3 fw-bold small">Follow us on social media!</p>
+            <div class="d-flex gap-3 fs-5">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-x"></i>
+              <i class="bi bi-pinterest"></i>
+              <i class="bi bi-linkedin"></i>
+            </div>
+          </div>
+
+          <!-- Column 1 -->
+
+          <div class="col-md-6 col-lg-2 mb-4 md:py-5">
+            <div class="h-70 border-start border-light ps-3">
+              <h6 class="fw-bold">Global Privacy Policy</h6>
+              <ul class="list-unstyled list-link">
+                <li class="small fw-bold"></i>Legal Information</li>
+                <li class="small fw-bold"></i>Cookies</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Column 2 -->
+
+
+          <div class="col-md-6 col-lg-2 mb-4 md:py-5">
+            <div class="h-70 border-start border-light ps-3">
+              <h6 class="fw-bold">Quick Links</h6>
+              <ul class="list-unstyled list-link">
+                <li class="small fw-bold"></i>Product</li>
+                <li class="small fw-bold"></i>Important Links</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-md-6 col-lg-4 mb-4 md:py-5">
+            <div class="h-70 border-start border-light ps-3">
+              <h6 class="fw-bold">Contact Details</h6>
+              <ul class="list-unstyled list-link">
+                <li class="small fw-bold"><i class="bi bi-envelope me-2"></i>sms@smcfoods.com</li>
+                <li class="small fw-bold"><i class="bi bi-telephone me-2"></i>+91 8126770000</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom Bar -->
+      <div class="footer-bottom text-center text-white py-3 fw-bold footer-bottom-stripe">
+        © 2025 SMC Limited
+      </div>
+    </footer>
+  </div>
+
 
 </body>
 
