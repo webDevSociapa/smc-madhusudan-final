@@ -83,15 +83,13 @@
 
 .product-title{
   color: #1961AC;
-  font-weight: 700;
+  font-weight: 600;
   font-family: poppins;
-  font-size: 28px;
-
+  font-size: 25px;
 }
 
 .product-desc{
-  color: #5B5B5B;
-  font-weight: 500;
+  font-size: 15px;
   font-family: poppins;
 }
 

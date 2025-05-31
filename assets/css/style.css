@@ -33,6 +33,7 @@ body {
   background: url('/assets/img/slider-bg.png') no-repeat center center/cover;
   position: relative;
   min-height: 500px;
+  padding-bottom: 7rem;
 }
 
 /* .about-section::before {
@@ -72,6 +73,139 @@ body {
   border-radius: 25px;
   padding: 8px 30px;
 }
+
+/* Our Brand */
+.brand-head-div {
+  position: relative;
+  z-index: 1;
+  margin-top: 10rem;
+}
+
+.brand-clipart-img {
+  position: absolute;
+  left: 75%;
+  right: 0px;
+  top: 10%;
+  transform: translateY(-50%);
+  width: 30%;
+  z-index: -1;
+  opacity: 1;
+}
+
+.brand-heading {
+  font-family: 'outfit';
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #1961AC;
+}
+
+.brand-heading span {
+  font-weight: 400;
+}
+
+.box-shd {
+  background-color: #E9F4E0;
+  box-shadow: rgba(0, 0, 0, 0.1) 10px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 10px 6px -2px;
+}
+
+.nav-tabs .nav-link {
+  color: #5b5b5b;
+  font-size: 1.4rem;
+  font-weight: 300;
+  border: none;
+}
+
+.nav-tabs .nav-link.active {
+  border-radius: 30px;
+  border: 2px solid #79C142;
+  background: transparent;
+  color: #79c142;
+  font-weight: 600;
+}
+
+/* Why Choose Us */
+.why-choose-us {
+  background-color: #ffffff;
+  padding-top: .1rem;
+  padding-bottom: 6rem;
+}
+
+.wcu-clipart-img {
+    position: absolute;
+    left: 85%;
+    right: 0px;
+    top: -70%;
+    transform: translateY(-50%);
+    width: 30%;
+    z-index: -1;
+    opacity: 1;
+}
+
+.icon-row {
+  margin-top: 7rem;
+}
+
+.icon-row h5 {
+  font-size: 30px;
+  font-family: 'Outfit';
+}
+
+.icon-row p {
+  font-size: 18px;
+  font-family: 'Poppins';
+  font-weight: 200;
+  letter-spacing: .1rem;
+}
+
+.why-card-ftf {
+  background: #1961AC;
+  border: 1px solid #bbbbbb;
+  border-radius: 2rem;
+  padding-top: 3rem;
+  position: relative;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.why-card-unc-safety {
+  background: #94C83D;
+  border: 1px solid #bbbbbb;
+  border-radius: 2rem;
+  padding-top: 3rem;
+  position: relative;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.why-card-us-prac{
+  background: #1961AC;
+  border: 1px solid #bbbbbb;
+  border-radius: 2rem;
+  padding-top: 3rem;
+  position: relative;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.icon-wrapper {
+  top: -15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Our Infra */
+.blue-box {
+  background-color: #0070c0;
+  color: #fff;
+  padding: 35px 35px;
+  border-radius: 35px 0 0 0;
+  max-width: 400px;
+  position: relative;
+  top: 90px;
+  left: 34%;
+}
+
+
 
 
 /* ===============================
