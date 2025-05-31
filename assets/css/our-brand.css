@@ -53,8 +53,8 @@
   }
 
   .common-tab.active {
-    border-color: #198754 !important; /* Bootstrap 'success' color */
-    color: #198754 !important;
+    border-color: #79c142 !important; /* Bootstrap 'success' color */
+    color: #79c142 !important;
   }
 
   .card {
