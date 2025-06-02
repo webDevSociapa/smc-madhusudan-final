@@ -10,14 +10,32 @@
   color: #1961AC !important;
   text-align: center;
   font-size: 40px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Outfit';
   font-weight: 600;
+}
+
+.our-blog-content{
+  font-family: 'Poppins';
 }
 
 .blog-read-more-btn{
     background-color: #1961AC;
     color: white;
     border-radius: 15px;
+    font-family: 'Poppins';
+    padding: 2px 10px;
+}
+
+.blog-date {
+  font-family: 'Poppins';
+}
+
+.blog-wise-details {
+  font-family: "Poppins";
+}
+
+.Blog-title {
+  font-family: 'Poppins';
 }
 
 /* footer */
