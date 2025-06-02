@@ -11,6 +11,12 @@ body {
     font-weight: bold;
     color: #1961AC;
     margin-bottom: 0.5rem;
+    font-family: 'Poppins';
+}
+
+.event-content {
+    font-family: 'Poppins';
+    font-size: 18px !important;
 }
 
 .event-card {
@@ -38,6 +44,7 @@ body {
     color: #fff;
     font-weight: 600;
     z-index: 1;
+    font-family: "Poppins";
 }
 
 .event-badge {
@@ -50,10 +57,17 @@ body {
     background-color: #003F7D;
 }
 
+.event-read-more {
+    font-family: 'Poppins';
+    cursor: pointer;
+    color: #92C840;
+}
+
 .book-now-btn {
     background-color: #1961AC;
     color: white;
     padding: 5px 12px;
+    font-family: "Poppins";
     border-radius: 15px;
     font-weight: bold;
     font-size: 14px;
@@ -66,23 +80,40 @@ body {
     color: #666;
 }
 
+.event-date {
+    font-family: 'Poppins';
+}
+
+.event-location {
+    font-family: 'Poppins';
+}
+
 .card-title {
     font-weight: bold;
+    font-family: 'Poppins';
+    margin-top: 4px;
 }
 
 .card-text {
     font-size: 14px;
     color: #444;
     margin-top: 10px;
+    font-family: 'Poppins';
+}
+
+.event-card-body {
+    padding: 2px 16px 16px 16px;
 }
 
 
-.our-exhibition {
-    background-color: #1961AC;
+.our-Exhibitions-btn {
+     background-color: #1961AC;
     color: white;
-    padding: 0px 4px;
+    padding: 5px 12px;
+    font-family: "Poppins";
     border-radius: 15px;
-    font-size: 10px;
+    font-weight: bold;
+    font-size: 14px;
     border: none;
 
 }
@@ -141,5 +172,54 @@ footer.bg-primary {
     width: 100%;
 }
 
+
+/* Media Query */
+
+@media (max-width: 991.98px) {
+    .event-title {
+        font-size: 18px;
+    }
+
+    .event-content {
+        font-size: 18px;
+    }
+
+    .event-price,
+    .event-price {
+        font-size: 18px;
+    }
+
+    .book-now-btn{
+        font-size: 14px;
+    }
+
+    .event-read-more {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 575.98px) {
+    .event-title {
+        font-size: 16px;
+    }
+
+    .event-content {
+        font-size: 16px;
+    }
+
+      .event-price,
+    .event-price {
+        font-size: 16px;
+    }
+
+     .book-now-btn{
+        font-size: 14px !important;
+    }
+
+     .event-read-more {
+        font-size: 14px;
+    }
+}
 
 /* footer csss */
