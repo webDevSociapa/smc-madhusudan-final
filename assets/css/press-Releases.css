@@ -22,9 +22,10 @@ body {
 .event-card {
     border-radius: 15px;
     overflow: hidden;
-    background: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: transparent !important;
     position: relative;
+    border: none; /* Optional: remove border if you want full transparency */
+  box-shadow: none; /* Optional: remove shadow if not needed */
 }
 
 .card-img-top {
