@@ -2,7 +2,9 @@
    background-image: url("/assets/img/bg-image.png") !important;
    background-repeat: no-repeat;
    background-size: cover;
-   font-family: poppins;
+   font-family: 'Poppins';
+   margin: 0;
+  padding: 0;
 
  }
 
@@ -96,6 +98,15 @@
    font-weight: 400;
    font-family: "Poppins";
  }
+
+ .news-title {
+  font-family: "Outfit";
+}
+
+.news-content {
+  font-family: "Poppins";
+}
+
 
  /*  */
 

@@ -1,7 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
+  background-image: url("/assets/img/slider-bg.png") !important;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 .custom-navbar {
@@ -255,6 +258,15 @@ body {
   z-index: -1;
   opacity: 1;
 }
+
+.news-title {
+  font-family: "Outfit";
+}
+
+.news-content {
+  font-family: "Poppins";
+}
+
 
 
 
