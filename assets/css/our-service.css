@@ -118,20 +118,20 @@ footer.bg-primary {
 .product-title {
   color: #1961AC;
   font-weight: 700;
-  font-family: poppins;
+  font-family: 'Poppins';
   font-size: 28px;
-
 }
 
 .product-desc {
   color: #5B5B5B;
-  font-weight: 500;
-  font-family: poppins;
+  font-weight: 400;
+  font-family: "Poppins";
 }
 
 .common-tab {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  font-family: "Poppins";
   border: 2px solid transparent;
   border-radius: 15px;
   font-weight: bold;
@@ -172,16 +172,23 @@ footer.bg-primary {
   top: -55px;
   left: -162px;
   width: 376px;
-  font-family: Poppins;
+  font-family: 'Poppins';
   z-index: 2;
   padding: 6px;
 }
 
+.smc-service-offer {
+  font-family: 'Poppins';
+  font-size: 16px;
+  margin-top: -20px;
+}
+
 .infrastrucutre-content {
-  font-family: Poppins;
+  font-family: 'Poppins' !important;
   color: #1E1E1E;
   line-height: 32px;
   margin-top: 30px !important;
+  text-align: justify;
 }
 
 .infra-top-box {
@@ -194,11 +201,11 @@ footer.bg-primary {
   color: #FFFFFF;
   font-weight: 700;
   font-size: 40px !important;
-  font-family: Poppins;
+  font-family: 'Poppins';
 }
 
 .infra-box-content {
-  font-family: Poppins;
+  font-family: 'Outfit';
   font-size: 15px;
   letter-spacing: 1px;
 }
@@ -209,7 +216,22 @@ footer.bg-primary {
 }
 
 .vision-title {
+  font-family: 'Outfit';
   color: #1961AC !important;
+}
+
+.mision-title {
+  font-family: 'Outfit';
+}
+
+.mission-vision-content {
+  font-family: 'Poppins';
+  font-size: 18px;
+}
+
+.our-service-read-more-btn {
+  font-family: "Poppins";
+
 }
 
 /* Responsive: hide label and stack naturally on small screens */
@@ -225,7 +247,7 @@ footer.bg-primary {
     top: -50px;
     left: -62px;
     width: 376px;
-    font-family: Poppins;
+    font-family: "Poppins";
     z-index: 2;
     padding: 6px;
   }
