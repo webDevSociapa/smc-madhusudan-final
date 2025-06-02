@@ -28,7 +28,6 @@ body {
 }
 
 
-
 .event-badge,
 .event-price {
     position: absolute;
@@ -105,11 +104,7 @@ body {
     background-color: transparent;
 }
 
-
-
 /* footer csss  */
-
-
 .newsletter-bg {
     background-color: #79C142;
 }
