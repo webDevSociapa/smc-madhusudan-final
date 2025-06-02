@@ -265,17 +265,7 @@ footer.bg-primary {
     }
 
     .flower-img {
-        position: absolute;
-        top: 140%;
-        /* just after the top section */
-        right: 0;
-        transform: translateY(-50%);
-        /* shift it up to overlap */
-        max-width: 150px;
-        /* Adjust as needed */
-        z-index: 1;
-        background: none;
-        background-color: transparent;
+       display: none;
     }
 
     .career-question-title {
@@ -300,6 +290,10 @@ footer.bg-primary {
 
 .apply-btn {
     font-size: 16px;
+}
+
+.opening-card {
+    width: 96%;
 }
 
 
