@@ -81,18 +81,18 @@
   padding: 30px !important;
 }
 
-.product-title{
+.product-title {
   color: #1961AC;
-  font-weight: 600;
-  font-family: poppins;
-  font-size: 25px;
+  font-weight: 700;
+  font-family: 'Poppins';
+  font-size: 28px;
 }
 
-.product-desc{
-  font-size: 15px;
-  font-family: poppins;
+.product-desc {
+  color: #5B5B5B;
+  font-weight: 400;
+  font-family: "Poppins";
 }
-
 /*  */
 
 
@@ -185,13 +185,36 @@ footer.bg-primary {
 
 /* Review */
 
-.brand-heading {
-  font-family: 'outfit';
+
+
+.brand-heading-review {
+  font-family: 'Outfit';
   font-size: 3.2rem;
   font-weight: 700;
   color: #1961AC;
 }
 
+.brand-subtext-review {
+  font-family: 'Poppins';
+}
+
 .brand-heading span {
   font-weight: 400;
+}
+.our-review-section {
+  margin-top: -30px;
+}
+
+@media(max-width: 578px) {
+  .brand-heading-review {
+    font-size: 34px !important;
+  }
+
+  .our-review-section {
+    margin-top: -80px;
+  }
+
+  .brand-head-div {
+    margin-top: -50px ;
+  }
 }
