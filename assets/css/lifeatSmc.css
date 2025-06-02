@@ -8,14 +8,21 @@ body {
 .life-at-smc-title {
     color: #1961AC;
     font-size: 40px;
-    font-family: 'Poppins', sans-serif;
+    /* Default for desktop */
+    font-family: 'Poppins';
     font-weight: 600;
 }
+
+
 
 .life-at-smc-content {
     text-align: justify;
     margin-bottom: 1rem;
+    font-family: 'Poppins';
+    font-size: 20px;
 }
+
+
 
 img.img-fluid {
     border-radius: 8px;
@@ -32,8 +39,15 @@ img.img-fluid {
     color: #1961AC;
     text-align: center;
     font-size: 40px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
     font-weight: 600;
+}
+
+.current-opening-content {
+    font-family: Poppins;
+    font-size: 20px;
+
+
 }
 
 .bg-section-opening {
@@ -60,15 +74,17 @@ img.img-fluid {
 .job-title {
     font-size: 32px;
     font-weight: 700;
+    font-family: 'Poppins';
     margin-bottom: 15px;
     font-weight: 700 !important;
     color: white;
 }
 
 .job-description {
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 20px;
     color: white;
+    font-family: "Poppins";
 }
 
 .apply-btn {
@@ -81,19 +97,35 @@ img.img-fluid {
     font-weight: 600;
     cursor: pointer;
     border: 1px solid;
+    font-family: "Poppins";
 }
 
 .career-question-title {
     color: #1961AC;
     text-align: center;
     font-size: 40px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
     font-weight: 600;
 }
 
+.career-queations-content {
+    text-align: justify;
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
 .custom-accordion-button {
-    color: #599030 !important;
+    color: #676767 !important;
     background-color: #E9F4E0 !important;
+    font-family: 'Poppins';
+}
+
+.custom-accordion-button:hover {
+    color: #79C142 !important;
+}
+
+.custom-accordian-answer{
+    font-family: 'Poppins';
 }
 
 .flower-img {
@@ -159,16 +191,116 @@ footer.bg-primary {
     width: 100%;
 }
 
-@media(max-width: 768px){
-    .smc-life-corousal{
+@media(max-width: 768px) {
+    .smc-life-corousal {
         width: 170px !important;
     }
 }
 
-@media(max-width: 468px){
-    .smc-life-corousal{
+@media(max-width: 468px) {
+    .smc-life-corousal {
         width: 120px !important;
     }
 }
 
-/*  */
+/*Media Query Starting  */
+
+/* Medium screens (tablets) */
+@media (max-width: 991.98px) {
+    .life-at-smc-title {
+        font-size: 32px;
+    }
+
+    .life-at-smc-content {
+        font-size: 16px;
+    }
+
+    .current-opening-title {
+        font-size: 28px;
+    }
+
+    .current-opening-content {
+        font-size: 16px;
+    }
+
+    .career-question-title {
+        font-size: 28px;
+    }
+
+    .career-queations-content {
+        font-size: 16px;
+    }
+    .custom-accordian-answer{
+        font-size: 16px;
+    }
+    .job-title{
+        font-size: 22px;
+    }
+
+    .job-description {
+        font-size: 16px;
+    }
+
+    .apply-btn {
+        font-size: 16px;
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 575.98px) {
+    .life-at-smc-title {
+        font-size: 24px;
+    }
+
+    .life-at-smc-content {
+        font-size: 14px;
+    }
+
+    .current-opening-title {
+        font-size: 24px;
+    }
+
+    .current-opening-content {
+        font-size: 16px;
+    }
+
+    .flower-img {
+        position: absolute;
+        top: 140%;
+        /* just after the top section */
+        right: 0;
+        transform: translateY(-50%);
+        /* shift it up to overlap */
+        max-width: 150px;
+        /* Adjust as needed */
+        z-index: 1;
+        background: none;
+        background-color: transparent;
+    }
+
+    .career-question-title {
+        font-size: 28px;
+    }
+
+    .career-queations-content {
+        font-size: 16px;
+    }
+
+    .custom-accordian-answer{
+        font-size: 16px;
+    }
+
+    .job-title{
+        font-size: 22px;
+    }
+
+    .job-description {
+        font-size: 18px;
+    }
+
+.apply-btn {
+    font-size: 16px;
+}
+
+
+}
