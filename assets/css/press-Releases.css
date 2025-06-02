@@ -123,6 +123,15 @@ body {
     margin-bottom: 20px;
 }
 
+.news-title {
+  font-family: "Outfit";
+}
+
+.news-content {
+  font-family: "Poppins";
+}
+
+
 .flower-img {
     position: absolute;
     /* just after the top section */
