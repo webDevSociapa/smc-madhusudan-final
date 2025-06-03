@@ -210,6 +210,15 @@ body {
   left: 34%;
 }
 
+.infrastrucutre-content {
+  font-family: 'Poppins' !important;
+  color: #1E1E1E;
+  line-height: 32px;
+  margin-top: 30px !important;
+  text-align: justify;
+}
+
+
 /* Reviews */
 .review-card-h {
   background: #fff;
@@ -294,9 +303,40 @@ body {
     padding: 5px 15px;
   }
 
-    .about-text {
-      text-align: justify;
-    }
+  .about-text {
+    text-align: justify;
+  }
+
+  .infrastrucutre-content {
+    font-size: 16px !important;
+  }
+
+  .infrastrucutre-section {
+    margin-top: 0px !important;
+  }
+  
+  .icon-row {
+    margin-top: 0px;
+  }
+
+  .icon-row h5 {
+    font-size: 26px;
+  }
+
+  .icon-row p {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .why-card-ftf {
+    margin-bottom: 30px;
+  }
+
+ 
+
+  .why-card-unc-safety {
+    margin-bottom: 30px !important;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {}

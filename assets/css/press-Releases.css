@@ -24,8 +24,10 @@ body {
     overflow: hidden;
     background-color: transparent !important;
     position: relative;
-    border: none; /* Optional: remove border if you want full transparency */
-  box-shadow: none; /* Optional: remove shadow if not needed */
+    border: none;
+    /* Optional: remove border if you want full transparency */
+    box-shadow: none;
+    /* Optional: remove shadow if not needed */
 }
 
 .card-img-top {
@@ -108,7 +110,7 @@ body {
 
 
 .our-Exhibitions-btn {
-     background-color: #1961AC;
+    background-color: #1961AC;
     color: white;
     padding: 5px 12px;
     font-family: "Poppins";
@@ -116,21 +118,20 @@ body {
     font-weight: bold;
     font-size: 14px;
     border: none;
-
 }
+
 
 .press-bg-color {
     margin-bottom: 20px;
 }
 
 .news-title {
-  font-family: "Outfit";
+    font-family: "Outfit";
 }
 
 .news-content {
-  font-family: "Poppins";
+    font-family: "Poppins";
 }
-
 
 .flower-img {
     position: absolute;
@@ -199,7 +200,7 @@ footer.bg-primary {
         font-size: 18px;
     }
 
-    .book-now-btn{
+    .book-now-btn {
         font-size: 14px;
     }
 
@@ -218,16 +219,16 @@ footer.bg-primary {
         font-size: 16px;
     }
 
-      .event-price,
+    .event-price,
     .event-price {
         font-size: 16px;
     }
 
-     .book-now-btn{
+    .book-now-btn {
         font-size: 14px !important;
     }
 
-     .event-read-more {
+    .event-read-more {
         font-size: 14px;
     }
 }
