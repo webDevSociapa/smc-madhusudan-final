@@ -153,6 +153,15 @@ footer.bg-primary {
   height: 30px;
 }
 
+.news-title {
+  font-family: "Outfit";
+}
+
+.news-content {
+  font-family: "Poppins";
+}
+
+
 @media (min-width: 768px) {
   .mission-icon {
     width: 40px;
