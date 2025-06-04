@@ -12,6 +12,63 @@
 
 
   <title>About us</title>
+  <style>
+    .about-section {
+  padding: 40px 20px;
+}
+
+.about-wrapper {
+    display: flex
+;
+    max-width: 70%;
+    margin: auto;
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.about-text {
+    background-color: #96cc3f;
+    color: white;
+    padding: 40px;
+    flex: 1;
+    z-index: 2;
+    position: relative;
+    border-top-right-radius: 191px;
+    border-bottom-right-radius: 190px;
+    margin-right: -200px;
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-text h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.about-image {
+  flex: 1;
+  z-index: 1;
+  height: 100%;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+}
+  </style>
 </head>
 
 <body>
@@ -53,6 +110,23 @@
   </nav>
 
   <!-- About content -->
+
+  <section class="about-section">
+    <div class="about-wrapper">
+      <div class="about-text">
+        <h2><strong>About</strong> SMC Group</h2>
+        <p>
+          SMC Agri Limited is part of the larger SMC Group, a multifaceted conglomerate with interests spanning dairy, agriculture, and food processing.
+        </p>
+        <p>
+          Over three decades, SMC Group has built an integrated ecosystem—from farm inputs to value-added products—leveraging cutting-edge technology and community-driven initiatives that empower farmers and ensure consistent quality.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="assets/img/aboutusSmc.png" alt="SMC Employee">
+      </div>
+    </div>
+  </section>
 
 
   <div class="container my-5">
