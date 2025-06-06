@@ -210,6 +210,19 @@ footer.bg-primary {
 
 }
 
+@media(max-width: 1400px) {
+     .evt-card-content {
+        font-size: 14px !important;
+     }
+}
+
+@media(max-width: 1200px) {
+    .evt-card-content {
+        font-size: 9px !important;
+        
+    }
+}
+
 @media (max-width: 575.98px) {
     .event-title {
         font-size: 16px;
@@ -228,6 +241,7 @@ footer.bg-primary {
         font-size: 14px !important;
     }
 
+    
     .event-read-more {
         font-size: 14px;
     }
