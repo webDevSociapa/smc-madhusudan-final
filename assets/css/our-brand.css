@@ -2,10 +2,6 @@
    background-image: url("/assets/img/bg-image.png") !important;
    background-repeat: no-repeat;
    background-size: cover;
-   font-family: 'Poppins';
-   margin: 0;
-  padding: 0;
-
  }
 
 
@@ -90,7 +86,7 @@
    color: #1961AC;
    font-weight: 700;
    font-family: 'Poppins';
-   font-size: 28px;
+   font-size: 25px;
  }
 
  .product-desc {
