@@ -393,6 +393,9 @@ body {
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
+  body {
+    overflow-x: hidden;
+  }
 
   /* Header */
   .nav-link {
@@ -415,6 +418,19 @@ body {
   }
 
   /* end about section */
+
+  .brand-head-div {
+    margin-top: 6rem;
+  }
+
+  .product-title {
+    font-size: 20px;
+  }
+
+  .infra-label-box {
+    top: -85px;
+    left: -200px;
+  }
 }
 
 @media (min-width: 1400px) and (max-width: 1599px) {
@@ -428,5 +444,9 @@ body {
 
   .brand-heading {
     font-size: 2.5rem !important;
+  }
+
+  .brand-head-div {
+    margin-top: 3rem;
   }
 }

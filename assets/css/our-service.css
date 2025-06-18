@@ -278,23 +278,3 @@ footer.bg-primary {
     display: none !important;
   }
 }
-
-@media(max-width: 1268px) {
-  .infra-label-box {
-    top: -50px;
-    left: -62px;
-    width: 376px;
-    font-family: Poppins;
-    z-index: 2;
-    padding: 6px;
-  }
-
-  .infra-top-box {
-    padding: 18px !important;
-  }
-
-  .infra-box-title {
-    font-size: 25px !important;
-
-  }
-}
