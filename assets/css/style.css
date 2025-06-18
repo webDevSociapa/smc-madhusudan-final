@@ -365,6 +365,10 @@ body {
 
 @media (min-width: 992px) and (max-width: 1199px) {
 
+  body {
+    overflow-x: hidden;
+  }
+
   /* Header */
   .nav-link {
     padding: 10px 15px !important;
@@ -390,6 +394,28 @@ body {
   .about-text {
     font-size: .9rem;
   }
+
+  .infra-label-box {
+        top: -100px;
+        left: -150px;
+    }
+
+  .product-title {
+    font-weight: 500 !important;
+    font-size: 15px;
+  }
+
+  .brand-head-div {
+    margin-top: 0 !important;
+  }
+
+  .brand-clipart-img {
+    width: 30%;
+    position: absolute;
+    left: 75%;
+    top: -130%;
+  }
+
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {

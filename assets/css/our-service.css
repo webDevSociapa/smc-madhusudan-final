@@ -203,7 +203,7 @@ footer.bg-primary {
 
 .infra-top-box {
   background-color: #1961AC;
-  padding: 35px !important;
+  padding: 25px !important;
   border-top-left-radius: 50px;
 }
 
@@ -263,7 +263,7 @@ footer.bg-primary {
   }
 
   .infra-top-box {
-    padding: 18px !important;
+    padding: 18px;
   }
 
   .infra-box-title {
