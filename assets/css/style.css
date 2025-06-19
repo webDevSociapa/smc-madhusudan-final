@@ -426,6 +426,10 @@ body {
     padding: 0;
   }
 
+  .body-cad h5 {
+        font-size: 17px !important;
+  }
+
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
