@@ -416,6 +416,16 @@ body {
     top: -130%;
   }
 
+  .address-card {
+    height: 150px !important;
+    padding: 0;
+}
+
+  .address-card2 {
+    height: 150px !important;
+    padding: 0;
+  }
+
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -456,6 +466,10 @@ body {
   .infra-label-box {
     top: -85px;
     left: -200px;
+  }
+
+  .address-card2 {
+    padding-left: 0px;
   }
 }
 
