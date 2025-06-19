@@ -50,7 +50,7 @@ body {
 .bg-product-list {
   background-image: url("/assets/img/productFrame-1.png");
   padding: 59px;
-  repeat: no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
